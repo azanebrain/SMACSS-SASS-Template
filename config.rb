@@ -8,7 +8,7 @@ require 'sass-globbing'
 #Breakpoint-SASS is a breakpoint library
 #URL: http://breakpoint-sass.com
 #(sudo) gem install breakpoint
-require 'breakpoint'
+#require 'breakpoint'
 
 #Sassy Buttons is a robust button UI Kit
 #URL: http://jaredhardy.com/sassy-buttons/
@@ -18,7 +18,7 @@ require 'breakpoint'
 #compass install sassy-buttons
 #move the sassybuttons.scss file into the styles-precompile/vendors directory
 #@import "vendors/sassybuttons"
-require 'sassy-buttons'
+#require 'sassy-buttons'
 
 # Set this to the root of your project when deployed:
 http_path = "/"
