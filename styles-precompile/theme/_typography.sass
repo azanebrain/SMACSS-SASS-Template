@@ -1,3 +1,12 @@
+//*IMPORTS:
+//To use custom web fonts, you must include them in your theme. You have three options:
+//Import a font sass or scss file:
+//@import "theme/fonts/open_sans"
+//Note that this open_sans.scss file will probably have relative links such as: url('../fonts/opensans.ttf'). Make sure to setup your filestructure so that this 'fonts' directory is in relation to the 'styles' directory, since that is where all this code will end up once it is compiled
+//Import from a url:
+//@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800|Open+Sans+Condensed:300,300italic,700);
+//Include fonts with the <link> attribute within your <head>
+//<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800|Open+Sans+Condensed:300,300italic,700' rel='stylesheet' type='text/css'>
 
 //  __   __  |    __   __  
 // (___ (__) |_, (__) |  ' 
@@ -17,38 +26,83 @@ li
 //   __ o __    ___  
 // __)  |  (__ (__/_ 
 
-$smallFontSize: .8em
-$normalFontSize: 1em
-$largeFontSize: 1.5em
+//Set the normal size. Other sizes are a percentage of that
+$font-size-normal: 14px
+$font-size-extrasmall: $font-size-normal * .6
+$font-size-small: $font-size-normal * .8
+$font-size-large: $font-size-normal * 1.2
+$font-size-extralarge: $font-size-normal * 1.4
 
 //          ___  o  __  |__  _|_  
 // (__(__( (__/_ | (__| |  )  |_, 
 //                  __/           
 
-$thinFontWeight: 400
-$normalFontWeight: 600
-$heavyFontWeight:  800
+$font-weight-book: 300
+$font-weight-normal: 400
+$font-weight-semibold: 600
+$font-weight-bold: 700
+$font-weight-extrabold: 800
 
 //   _                
 // _|_  __   __  _|_  
 //  |  (__) |  )  |_, 
-    
-    
+
 //Setup a fallback font to easily set the tone of the site if custom fonts are not supported
 $fallback: 'Arial', sans-serif
 
 //Font families:
-$openSans: 'Open Sans', $fallback
-$openSansCondensed: 'Open Sans Condensed', $fallback
+$OpenSans-Book: 'OpenSans-Light' $fallback
+$OpenSans-Book-Italic: 'OpenSansLight-Italic' $fallback
+$OpenSans-Normal: 'OpenSans' $fallback
+$OpenSans-Normal-Italic: 'OpenSans-Italic' $fallback
+$OpenSans-Semibold: 'OpenSans-Semibold', $fallback
+$OpenSans-Semibold-Italic: 'OpenSans-SemiboldItalic', $fallback
+$OpenSans-Bold: 'OpenSans-Bold', $fallback
+$OpenSans-Bold-Italic: 'OpenSans-BoldItalic', $fallback
+$OpenSans-Extrabold: 'OpenSans-Extrabold', $fallback
+$OpenSans-Extrabold-Italic: 'OpenSans-ExtraboldItalic', $fallback
 
-//Include fonts with the <link> attribute within your <head>
-//<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800|Open+Sans+Condensed:300,300italic,700' rel='stylesheet' type='text/css'>
+//*NAMED_FONTS
+//Convention: font-NAME-WEIGHT-STYLE
+$font-standard-book: $OpenSans-Book
+$font-standard-book-italic: $OpenSans-Book-Italic
+$font-standard-normal: $OpenSans-Normal
+$font-standard-normal-italic: $OpenSans-Normal-Italic
+$font-standard-semibold: $OpenSans-Semibold
+$font-standard-semibold-italic: $OpenSans-Semibold-Italic
+$font-standard-bold: $OpenSans-Bold
+$font-standard-bold-italic: $OpenSans-Bold-Italic
+$font-standard-extrabold: $OpenSans-Extrabold
+$font-standard-extrabold-italic: $OpenSans-Extrabold-Italic
 
-$font-normal: $openSans
-$font-condensed: $openSansCondensed
+//*STYLES
 
+body,
+a,
+li
+	font-family: $font-standard-normal
+	font-weight: $font-weight-normal
+	font-size: $font-size-normal
 
-p
-	font-family: $font-normal
-	font-size: $normalFontSize
-	font-weight: $normalFontWeight
+strong
+	font-family: $font-standard-bold
+	font-weight: $font-weight-bold
+	font-size: $font-size-normal
+
+h1
+	font-family: $font-standard-extrabold
+	font-weight: $font-weight-extrabold
+	font-size: $font-size-extralarge
+	
+h2
+	font-family: $font-standard-bold-italic
+	font-weight: $font-weight-bold
+	font-size: $font-size-large
+	
+h3,
+h4,
+h5,
+h6
+	font-family: $font-standard-bold
+	font-weight: $font-weight-bold
+	font-size: $font-size-large
