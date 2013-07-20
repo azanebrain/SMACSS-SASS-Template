@@ -24,7 +24,13 @@ require 'sass-globbing'
 http_path = "/"
 css_dir = "styles"
 sass_dir = "styles-precompile"
-images_dir = "img"
+
+images_dir = "styles-precompile/img"
+images_path = "./styles-precompile/img"
+generated_images_dir = "../images/sprites"
+generated_images_path = "images/sprites"
+http_generated_images_path = "../images/sprites"
+
 javascripts_dir = "javascripts"
 
 # You can select your preferred output style here (can be overridden via the command line):

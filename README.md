@@ -29,6 +29,17 @@ compass compile -e production
 ```
 when you are ready to compress your project for the production environment.
 
+SPRITES
+===
+
+The sprite structure in this layout is not at all standard. :open_mouth:
+It is set up to keep your folder structure clean, and your repository light.
+Place your core images in the styles-precompile/img directory.
+When you compile, the generated sprite will be placed in the **images/sprites** directory. This will let you easily keep track of the sprite images being automatically generated compared to your core images.
+The images directory is gitignored, so make sure you upload your current spritesheets to your production environment, or recompile
+
+Instructions for spriting can be found in styles-precompile/base/_sprites.sass
+
 REQUIRED KNOWLEDGE
 ===
 
