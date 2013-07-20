@@ -1,0 +1,54 @@
+
+//  __   __  |    __   __  
+// (___ (__) |_, (__) |  ' 
+
+a
+	color: $linkColor
+	&:visited
+		color: $linkVisitedColor
+	&:active
+		color: $linkActiveColor
+
+body,
+p,
+li
+	color: $black
+	
+//   __ o __    ___  
+// __)  |  (__ (__/_ 
+
+$smallFontSize: .8em
+$normalFontSize: 1em
+$largeFontSize: 1.5em
+
+//          ___  o  __  |__  _|_  
+// (__(__( (__/_ | (__| |  )  |_, 
+//                  __/           
+
+$thinFontWeight: 400
+$normalFontWeight: 600
+$heavyFontWeight:  800
+
+//   _                
+// _|_  __   __  _|_  
+//  |  (__) |  )  |_, 
+    
+    
+//Setup a fallback font to easily set the tone of the site if custom fonts are not supported
+$fallback: 'Arial', sans-serif
+
+//Font families:
+$openSans: 'Open Sans', $fallback
+$openSansCondensed: 'Open Sans Condensed', $fallback
+
+//Include fonts with the <link> attribute within your <head>
+//<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800|Open+Sans+Condensed:300,300italic,700' rel='stylesheet' type='text/css'>
+
+$font-normal: $openSans
+$font-condensed: $openSansCondensed
+
+
+p
+	font-family: $font-normal
+	font-size: $normalFontSize
+	font-weight: $normalFontWeight

@@ -1,0 +1,32 @@
+/* No files to import found in mixins/* */
+/* No files to import found in mixins/* */
+/* No files to import found in base/* */
+/* No files to import found in layout/* */
+/* No files to import found in modules/* */
+/* No files to import found in states/* */
+/* line 5, ../styles-precompile/theme/_typography.sass */
+a {
+  color: #0000aa;
+}
+/* line 7, ../styles-precompile/theme/_typography.sass */
+a:visited {
+  color: #ab57ab;
+}
+/* line 9, ../styles-precompile/theme/_typography.sass */
+a:active {
+  color: #aa0000;
+}
+
+/* line 12, ../styles-precompile/theme/_typography.sass */
+body,
+p,
+li {
+  color: #111111;
+}
+
+/* line 51, ../styles-precompile/theme/_typography.sass */
+p {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 1em;
+  font-weight: 600;
+}
