@@ -1,4 +1,7 @@
-SMACCS-SASS-Template
+SMACSS-SASS-Template
 ====================
 
-A SASS template following SMACCS guidelines
+This is a SASS template following SMACSS guidelines
+
+SASS: 
+SMACSS: 
