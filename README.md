@@ -33,9 +33,13 @@ SPRITES
 ===
 
 The sprite structure in this layout is not at all standard. :open_mouth:
+
 It is set up to keep your folder structure clean, and your repository light.
+
 Place your core images in the styles-precompile/img directory.
+
 When you compile, the generated sprite will be placed in the **images/sprites** directory. This will let you easily keep track of the sprite images being automatically generated compared to your core images.
+
 The images directory is gitignored, so make sure you upload your current spritesheets to your production environment, or recompile
 
 Instructions for spriting can be found in styles-precompile/base/_sprites.sass
@@ -74,16 +78,24 @@ Utilize it using an IE conditional stylesheet, such as:
 SYNTAX
 ===
 
-**SASS Partial**
+**SASS Partial:**
+
 A sass partial is a .sass or .scss file that is not rendered into a .css file when your SASS project is compiled. To identify a file as a partial simply start the file name with an underscore (_). To include it in your project, use: @import "filename" (do not include the underscore, nor the .sass filetype)
+
 Example:
+
 File structure:
+
 theme.sass
+
 modules / _lightbox.sass
+
 theme.sass contains:
+
 ```
 @import "modules/lightbox"
 ```
+
 When compiled, the final CSS will be just **theme.css**, but the code from _lightbox.sass will be included
 
 
@@ -91,6 +103,7 @@ NOTES
 ===
 
 Unfortunately SASS Globbing does not yet work on Windows machines
+
 Please contribute to https://github.com/chriseppstein/sass-globbing/issues/3 if you are able to figure out a fix
 
 LICENSE
