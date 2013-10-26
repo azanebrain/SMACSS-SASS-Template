@@ -1,7 +1,7 @@
 SMACSS-SASS-Template
 ====================
 
-This is a SASS template following SMACSS guidelines. Use it as a starting point for your SASS project by simply adding SASS partials to the layout, mixins, modules, and theme folders.
+This is a SASS template following SMACSS guidelines. Use it as a starting point for your SASS project by simply adding SASS partials to the mixins, vendors, base, layout, modules, and states folders.
 
 
 DETAILS

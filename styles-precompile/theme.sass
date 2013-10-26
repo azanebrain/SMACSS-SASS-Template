@@ -1,10 +1,10 @@
+
 @import "theme/variables"
 
 //Vendors
-//Include vendor stylesheets such as Compass, Sassy Buttons, or Breakpoint-SASS
+//Include vendor stylesheets such as Compass or Sassy Buttons
 //@import "compass"
-//@import "vendors/sassybuttons"
-//@import "breakpoint"
+//@import "vendors/sassy-buttons"
 
 //FRAMEWORKS:
 //Include frameworks such as Foundation or Twitter Bootstrap
@@ -12,28 +12,16 @@
 
 @import "mixins/*"
 
-
-//Vendors
-//Include vendor stylesheets such as Compass or Sassy Buttons
-//@import "compass"
-//@import "vendors/sassybuttons"
-
-//FRAMEWORKS:
-//Include frameworks such as Foundation or Twitter Bootstrap
-//@import "frameworks/foundation/foundation"
-
-@import "mixins/*"
-
 //SMACSS Structure:
-@import "base/*"
-@import "layout/*"
-@import "modules/*"
-@import "states/*"
+@import "base/**/*" //Base rules are the defaults
+@import "layout/**/*" //Layout rules divide the page into sections
+@import "modules/**/*" //Modules are the reusable, modular parts of our design
+@import "states/**/*" //State rules are ways to describe how our modules or layouts will
+look when in a particular state.
 
 //*Variables specific to this theme
 //       __   __  o  __  |__  |    ___    __  o
 // (__| (__( |  ' | (__( |__) |_, (__/_ __)   o
-
 
 
 // _|_  |__   ___   __ __   ___  
